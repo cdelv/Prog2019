@@ -1,0 +1,23 @@
+
+// programa que imprime la suma armónica en una tabla y hace un pdf con la gráfica de los valores conseguidos.
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+int double sumatoria;
+int main (void)
+{
+ 
+ 
+  cout << "suma = " << sumatoria << endl;
+  cout << endl;
+  cout << "suma acumulada de los i primeros términos: " << sumatoria(i) << endl; 
+  return 0;
+}
+double sumatoria
+  {
+    double sumatoria;
+    for ( double i = 1; i <= 1000 ; i++) {
+      sumatoria += 1/i;
+    }
+    

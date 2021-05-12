@@ -1,0 +1,19 @@
+#include <iostreame>
+#include <vector>
+
+struct complex {
+	       double x = 0.0;
+	       double y = 0.0;
+};
+
+
+int main (void)
+{
+  complex z;
+  std::cout << z.x << std::endl;
+  std::cout << z.y zz std:: endl;
+  
+
+
+  return 0;
+}

@@ -1,0 +1,26 @@
+#include <iostream>
+
+
+float max ( float &a, float &b);
+int main (void)
+{
+  std::cout << "escribe un número \n";
+  std::cout << "no seas malvado, solo 6 decimales"
+    std::cin >> float a;
+  std::cout << "escribe otro numero \n"
+    std::cin >> float b;
+
+  std::cout << max(2.0000001,2.0000500001) << "\n";
+
+  return 0;
+}
+
+float max ( float &a, float &b)
+{
+  double result=0;
+  if ( a>= b) {
+    result = a;}
+  else {
+    result = b;}
+  return result;
+}

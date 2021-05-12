@@ -1,0 +1,22 @@
+#include <iostream>
+// al compilar hay que declararlo.
+
+template <typename T, typename S>
+T max (T a, S b)
+{
+  if (a >= b){
+    return a;}
+  else {
+    return b;}
+}
+
+int main (void)
+{
+
+  std::cout << max (1.5, -8) << "\n";
+  return 0;
+}
+
+
+
+

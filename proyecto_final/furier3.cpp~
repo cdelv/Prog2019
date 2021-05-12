@@ -1,0 +1,66 @@
+#include <iostream>
+#include <fstream>
+#include <cmath>
+
+
+using fptr = double(double,double); 
+double root (double x0, double eps, double t, fptr f, fptr fderiv, int itermax);
+double fun(double t, double x);
+double deriv(double t, double x);
+void error_itermax(double xr, double fxr, int itermax);
+double onda ();
+
+const double EPS = 1.0e-6;
+const int ITERMAX = 1000;
+const double v = 100;
+const double R = 10;
+const double L = 10.5;
+const double c = 340;
+
+int main(void)
+{
+  std::cout.precision(15); std::cout.setf(std::ios::scientific);
+  for (double i; i <= 1.0; i += 0.1){
+    double rt = root (0.34, EPS, i, fun, deriv, ITERMAX);
+  std::cout << rt << "\n";
+  }
+  return 0;
+}
+
+double root (double x0, double eps, double t, fptr f, fptr fderiv, int itermax)
+{
+  double xr = x0;
+  int iter = 0;
+  while(1) {
+    if (std::fabs(f(t,xr)) <= eps) {
+      break;
+    }
+    xr = xr - f(t, xr)/fderiv(t, xr);
+    iter++;
+    if (iter > itermax) {
+      error_itermax(xr, f(t, xr), itermax);
+      break;
+    }
+  }
+  std::cout << "# newton-raphson niter = " << iter << "\n";
+  
+  return xr;
+}
+double fun(double t, double x)
+{
+  return std::pow(v*L/R*c,2) + std::pow(v/c, 2) +2*(v*v*L/R*c*c)*std::sin(t - x) - x*x;
+}
+
+double deriv(double t, double x)
+{
+  return -2*(v*v*L/R*c*c)*std::cosh(t - x) - 2*x;
+}
+void error_itermax(double xr, double fxr, int itermax)
+{
+  std::cerr << "############################################\n";
+  std::cerr << "# ERROR: max number of iterations reached.\n";
+  std::cerr << "# itermax = " << itermax << "\n";
+  std::cerr << "# xr = " << xr << "\n";
+  std::cerr << "# f(t, xr) = " << fxr << "\n";
+  std::cerr << "############################################\n";
+}

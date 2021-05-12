@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cmath>
+
+int pares (int m);
+int fibonacci (int m);
+int main (void)
+{
+  std::cout << pares (4000000) << endl;
+  return 0;
+}
+
+int fibonacci (int m)
+{
+  if ( m == 0 or m == 1) return 1;
+  return fibonachi ( m-1 ) + fibonachi ( m-2 );
+}
+
+int pares (int m)
+{
+  int suma =0;
+  if (fibonacci(m)%2==0){
+    suma += fibonacci(m);}
+  return suma;
+}
+  

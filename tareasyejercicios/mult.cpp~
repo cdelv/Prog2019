@@ -1,0 +1,11 @@
+// programa que multiplica un número entero por dos dejado como tarea por la clase dle viernes en la que el profe faltó
+// Carlos Andrés del Valle
+#include <iostream>
+using nameplace std;
+int main (void)
+{
+  int numero;
+  cin >> "Escribe un número por favor: " >> numero; "\n"
+  cout << "el doble de tu numero es: " << numero*2; "\n"
+  return 0
+    }

@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <fstream>
+#include <ifstream>
+
+const int N = 8;
+
+struct alumno {
+  std::string nombre = "Luis";
+  std::string ID = "x";
+  int edad = 0;
+  int notas[N]={0};
+};
+
+int main (void)
+{
+  alumno Juan;
+  alumno Sara;
+  Juan.nombre = Juan;
+  Sara.nombre = Sara;
+  std::cout << Juan.nombre << endl;
+  
+
+
+  return 0;
+}

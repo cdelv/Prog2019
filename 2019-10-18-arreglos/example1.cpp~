@@ -1,0 +1,10 @@
+#include <iostream>
+#include <cmath>
+
+int main (void)
+{
+  int billy [10] = {0};
+  std:: cout << std::mean(billy) << "\n";
+
+  return 0;
+}

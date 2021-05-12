@@ -1,0 +1,22 @@
+// programa que imprime la suma armónica en una tabla y hace un pdf con la gráfica de los valores conseguidos.
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+
+double sumatoria ( int terminos, double x)
+  int main (void)
+{
+  
+  return 0;
+}
+
+double sumatoria ( int terminos, double x)
+{
+  double sumatoria;
+  for (int i = 1; i <= 1000 ; i++ ){
+    sumatoria += 1/i;			     
+  }
+  return sumatoria;
+}

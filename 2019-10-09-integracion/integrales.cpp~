@@ -1,0 +1,29 @@
+#include <iostream>
+#include <cmath>
+
+using fptr = double (double);
+
+double trapezoid_rule (double x, double h, int  n, fptr f);
+double f (double x);
+int main (void)
+{
+  double h = 0.1;
+  int n = 10
+    std::cout << trapezoid_rule(0 , h, n, fptr f);
+  return 0;
+}
+double f (double x)
+{
+  return x*x;
+}
+
+double trapezoid_rule (double x, double h, int  n, fptr f)
+{
+  double suma = 0;
+  for (int i = 0; i < n; ++i)
+    {
+      suma += f (x+i*h);
+
+    }
+  return h/2*(suma) + h* f(x+n*h);
+}

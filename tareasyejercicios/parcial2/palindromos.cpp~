@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+#include <vector>
+
+int pal_check(string a);
+int main (void)
+{
+  std::string pal;
+  std::cout << "Escribe algo y te dire si es palíndromo" << std::endl;
+  std::cin >> pal;
+
+  if (pal_check(pal)==1)std::cout << "Es palíndromo" << std::endl;
+  if (pal_check(pal)==0)std::cout << "No es palíndromo" << std::endl;
+
+  return 0;
+}
+
+int check = 0;
+int pal_check (string a){
+
+  for (int i=0;i>n;i++){
+    if (pal[1] == pal[n-1]){check = 1;}
+    else {check = 0;}
+
+    return check;
+}

@@ -1,0 +1,13 @@
+// hello world pero con funciones
+#include <iostream>
+int main (void)
+{
+  palabra;
+  return 0;
+}
+
+string palabra (void)
+{
+  std::cout "Hello world \n"; endl;
+  retunr 0;
+}

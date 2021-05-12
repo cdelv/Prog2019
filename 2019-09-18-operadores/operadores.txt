@@ -1,0 +1,20 @@
+Existe 5 operadores
++
+-
+*
+/
+% que es el módulo, imprime el resto de una división.
+Tambien se puede usar para hacer numeros periodicos
+
+a%4  
+aa%4
+00
+11
+22
+33
+40
+51
+62
+73
+80
+91

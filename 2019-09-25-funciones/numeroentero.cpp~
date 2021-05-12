@@ -1,0 +1,19 @@
+//recibe un entero  
+#include <iostream>
+
+
+int  numero (int m);
+int main (void)
+{
+  int m = 0;
+  palabra();
+  return 0;
+}
+
+int  numero palabra (int m) 
+{
+  std::cout << "Esscribe un número \n"; 
+  std::cin >> m;
+  std::cout << m;
+}
+

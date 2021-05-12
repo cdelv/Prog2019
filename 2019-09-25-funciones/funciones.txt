@@ -1,0 +1,6 @@
+return_type funtion_name ( type1 par1, type2 par2, ...)
+{
+// function body 
+
+// return value, if any
+}

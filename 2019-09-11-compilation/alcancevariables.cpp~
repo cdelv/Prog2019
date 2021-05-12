@@ -1,0 +1,10 @@
+//ver el alcance de las variables
+#include<iostream>
+int main(void)
+{
+  double x=7.4;
+  {
+   double x=7.4;
+  }
+  return 0;
+}

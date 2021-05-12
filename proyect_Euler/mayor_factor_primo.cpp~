@@ -1,0 +1,35 @@
+#include <iostream>
+#include <cmath>
+
+int primos (int m);
+int factores_primos (int m);
+int main(void)
+{
+  std::cout << factores_primos (600851475143)
+  return 0;
+}
+
+int primos (int m)
+{
+  if ( m == 1) return 0;
+  int flag = 1;
+  for (int ii = 2; ii <= m;ii++ ){
+    if (m%ii == 0){
+      flag 0;
+      break;
+    }
+  }
+  return flag;
+}
+
+int factores_primos (int m)
+  int factor= 0;
+{
+  for (int ii= 2; ii <= m; ii++){
+    if (m%primos(m)==0) {
+      factor = max (primos (m))
+	}
+  }
+  return factor;
+}
+

@@ -1,0 +1,30 @@
+#include <iostream>
+#include <cmath>
+
+int isprime(int m);
+int largest_prime_factor(int m);
+
+int main(void)
+{
+  std::cout << largest_prime_factor(9) << std::endl;
+  std::cout << largest_prime_factor(97) << std::endl;
+  std::cout << largest_prime_factor(100) << std::endl;
+  std::cout << largest_prime_factor(12345) << std::endl;
+  std::cout << largest_prime_factor(1000099) << std::endl;
+  std::cout << largest_prime_factor(5412345) << std::endl;
+  std::cout << largest_prime_factor(95412341) << std::endl;
+  std::cout << largest_prime_factor(35412347) << std::endl;
+  std::cout << largest_prime_factor(835412343) << std::endl;
+  
+  return 0;
+}
+
+int isprime(int m)
+{
+  // fill this
+}
+
+int largest_prime_factor(int m)
+{
+  // fill this
+}

@@ -1,0 +1,25 @@
+#include <iostream>
+
+int main (void)
+{
+  int divisor = 1;
+  int divisores = 0;
+  int num = 0;
+
+  std::cout << "Escribe un numero" endl;
+  std::cin >> num endl;
+  do {
+
+    if ( num % divisor == 0){
+      divisores ++;
+    }
+    
+  }
+  while (divisor <= num);
+  if (divisores == 2){
+    std::cout << "El numero " << num << " es primo";}
+  else {
+    "El numero" << num << " no es primo" endl;}
+    
+  return 0;
+}

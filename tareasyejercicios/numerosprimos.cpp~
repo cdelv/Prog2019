@@ -1,0 +1,43 @@
+// programa que imprime todos los números primos del 500 al 12400
+#include <iostream>
+#include<stdlib.h>
+#include<stdio.h>
+
+bool esPrimo (int n)
+  void primos (int n)
+
+int main (void)
+{
+  int n;
+  primos (n);
+  system ("pause");
+}
+
+
+void primos (int n)
+{
+  int conPri = 0, i = 500, s= 0
+    while (conPri < n)
+      {
+       if (esPrimo(i))
+	 {
+		       printf ("%d/t",i);
+		       s+= i;
+		       conPri++;
+       }
+       i++;
+       } 
+    }
+}
+
+bool esPrimo (int n)
+{
+  if (n == 1 || n == 4) return false;
+  for (int i = 500; i < n / 2; i++){
+    if (n % i == 0) {
+      printf ("Es divisible por %d/n" , i);
+      returne false;
+    }
+  }
+  return true
+}

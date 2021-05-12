@@ -1,0 +1,23 @@
+#include <iostreame>
+#include <cmath>
+
+
+int multiplos (int m);
+int suma (int m);
+
+int main (void)
+{
+  std::cout << suma (1000)<< std::endl;
+  return 0;
+}
+int multiplos (int m)
+{
+  for (int ii; ii <= m; ++ii){
+    if ((ii%3==0) or (ii%5==0)){
+      return ii;}}}
+int suma (int m)
+{
+  int result = 0;
+  result += ii;
+  return result;
+}

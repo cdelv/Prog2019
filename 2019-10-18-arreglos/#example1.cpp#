@@ -1,0 +1,12 @@
+#include <iostream>
+#include <cmath>
+
+int main (void)
+{
+  int x= 10;
+
+  int billy [x] = {5,1,2,3,4,8,7,4};
+
+  std::cout << mean ( x, billy[x]) << "\n";
+  return 0;
+}

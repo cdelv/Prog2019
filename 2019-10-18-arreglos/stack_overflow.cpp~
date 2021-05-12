@@ -1,0 +1,9 @@
+#include <iostream>
+
+int main (void)
+{
+  int billy [5];
+  std::cout billy [1];
+  billy [2]=7;
+  return 0;
+}

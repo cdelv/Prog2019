@@ -1,0 +1,17 @@
+#include <iostream>
+#include <string>
+
+int main(void)
+{
+
+  std::string a;
+  std::cout << "escribe algo y te lo devolveré al revez." << std::endl;
+  std::getline (std::cin, a);
+  int n = length.a;
+  for (int i = n-1; i<n ; i--){
+    std::cout << a.at(i);
+  }
+  std::cout << "" << std::endl;
+
+  return 0;
+}

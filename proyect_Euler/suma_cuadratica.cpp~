@@ -1,0 +1,15 @@
+#include <iostream>
+
+int main (void)
+{
+  int suma1=0;
+  int suma2=0;
+  int suma3=0;
+  for (int k; k<=100; ++k){
+    suma1 += k*k;}
+  for (int i; i<=100; ++i ){
+    suma2 += i;}
+  suma3= suma1 - suma2*suma2
+    std::cout << suma3 << std::endl;
+    return 0;
+}

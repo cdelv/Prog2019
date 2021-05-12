@@ -1,0 +1,39 @@
+#include <iostream>
+#include <string>
+#include <vector>
+
+
+int main (void)
+{
+  int y=0;
+  T x=0;
+  std::string a1,a2,a3,a4,a5,a6,a7,a8,a9,a10;
+  std::vector <string> {a1,a2,a3,a4,a5,a6,a7,a8,a9,a10};
+  a1 = "uno";
+  a2 = "dos";
+  a3 = "tres";
+  a4 = "cuatro";
+  a5 = "cinco";
+  a6 = "seis";
+  a7 = "siete";
+  a8 = "ocho";
+  a9 = "nueve";
+  a10 = "diez";
+
+  std::cout "escribe un número y te dire como se escribe o al revez!!" << std::endl;
+  std::cin >> x;
+  if (10 - x < 10)
+    {std::cout <<std::vector <x-1>}
+  else {for(int i=0; i<10; i++)
+      {if (x == std::vector <i>){break;}
+	y +=1;
+      }
+    std::cout << std::vector <y> << std::endl;
+  }
+  
+  
+
+
+
+  return 0;
+}
